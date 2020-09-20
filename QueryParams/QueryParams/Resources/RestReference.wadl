@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<application xmlns:soa="http://www.oracle.com/soa/rest" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://wadl.dev.java.net/2009/02">
+   <doc title="RestReference">RestReference</doc>
+   <resources>
+      <resource path="/obtener/token">
+         <method name="POST" soa:name="Token">
+            <request>
+               <param name="username" style="query" type="xsd:string"/>
+               <param name="password" style="query" type="xsd:string"/>
+               <representation mediaType="application/x-www-form-urlencoded"/>
+            </request>
+            <response>
+               <representation mediaType="application/json"/>
+            </response>
+            <response>
+               <representation mediaType="application/json"/>
+            </response>
+         </method>
+      </resource>
+   </resources>
+</application>
